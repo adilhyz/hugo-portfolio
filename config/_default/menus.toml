@@ -1,0 +1,114 @@
+# -------------------------------------------------------------------------------------
+# Menu Configuration
+# See: https://fixit.adilhyz.cn/documentation/basics/#menu-configuration
+# -------------------------------------------------------------------------------------
+
+[[main]]
+  identifier = "archives"
+  pre = ""
+  post = ""
+  name = "Arsip"
+  url = "/archives/"
+  title = ""
+  weight = 1
+  [main.params]
+    # icon = "fa-solid fa-archive"
+    icon = "fa-solid fa-book-bookmark"
+[[main]]
+  # identifier = "categories"
+  parent = "archives"
+  pre = ""
+  post = ""
+  name = "CV"
+  url = "/cv/"
+  title = ""
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-file-invoice"
+[[main]]
+  # identifier = "tags"
+  parent = "archives"
+  pre = ""
+  post = ""
+  name = "Resume"
+  url = "/resume/"
+  title = ""
+  weight = 2
+  [main.params]
+    icon = "fa-solid fa-user-tie"
+# [[main]]
+#   identifier = "collections"
+#   parent = "archives"
+#   pre = ""
+#   post = ""
+#   name = "Arsip"
+#   url = "/collections/"
+#   title = ""
+#   weight = 3
+#   [main.params]
+#     icon = "fa-solid fa-layer-group"
+[[main]]
+  identifier = "fixit"
+  parent = "archives"
+  pre = '<img class="fixit-icon" src="https://adilhyz.github.io/assets//profile.webp" alt="FixIt logo">'
+  post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
+  name = "FixIt"
+  url = "https://fixit.adilhyz.cn/"
+  title = "FixIt 官网"
+  weight = 4
+  [main.params]
+    divided = true
+[[main]]
+  identifier = "projects"
+  pre = ""
+  post = ""
+  name = "Projects"
+  url = "/projects/"
+  title = "Projek yang saya kembangkan"
+  weight = 4
+  [main.params]
+    # icon = "fa-solid fa-code-branch"
+    icon = "fa-solid fa-lightbulb fa-shake"
+[[main]]
+  identifier = "friends"
+  pre = ""
+  post = ""
+  name = "Friends"
+  url = "/friends/"
+  title = "Friends"
+  weight = 5
+  [main.params]
+    icon = "fa-solid fa-users"
+[[main]]
+  identifier = "rss"
+  pre = ""
+  post = ""
+  name = "RSS"
+  url = "/index.xml"
+  title = "RSS"
+  weight = 6
+  [main.params]
+    icon = "fa-solid fa-rss"
+    type = "desktop"
+[[main]]
+  identifier = "about"
+  pre = ""
+  post = ""
+  name = "About"
+  url = "/about/"
+  title = "Tentang Saya"
+  weight = 100
+  [main.params]
+    icon = "fa-solid fa-quote-left"
+[[main]]
+  identifier = "github"
+  pre = ""
+  post = ""
+  name = "Ikuti Github Saya"
+  url = "https://github.com/adilhyz/"
+  title = ""
+  weight = ""
+  [main.params]
+    class = "text-center"
+    icon = "fa-brands fa-github fa-lg"
+    type = "mobile"

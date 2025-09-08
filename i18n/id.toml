@@ -1,0 +1,216 @@
+# Translations for Indonesian
+# Terjemahan Bahasa Indonesia untuk Hugo FixIt
+
+# === init ===
+[init]
+configurationError = "Kesalahan konfigurasi\nAnda belum mengatur parameter FixIt dengan benar. Lihat https://fixit.lruihao.cn/zh-cn/documentation/basics/#theme-configuration"
+compatibilityError = "Kesalahan kompatibilitas ({{ .From }} -> {{ .To }}):\nAnda melakukan pembaruan yang tidak kompatibel. Lihat https://github.com/hugo-fixit/FixIt/releases"
+devVersionWarn = "Anda sedang menggunakan versi pengembangan FixIt, disarankan menggunakan versi stabil.\nLihat https://github.com/hugo-fixit/FixIt/releases"
+devEnvWarn = "Saat ini berjalan di lingkungan “development”. “Sistem komentar”, “PWA”, “CDN”, “fingerprint” dan “statistik” tidak akan diaktifkan."
+quicklyUpgrade = "Gunakan perintah berikut untuk upgrade cepat:"
+# === init ===
+
+# === baseof ===
+[baseof]
+backToTop = "Kembali ke atas"
+viewComments = "Lihat komentar"
+noscript = "Situs ini bekerja paling baik dengan JavaScript diaktifkan."
+# === baseof ===
+
+# === Taxonomy ===
+[archives]
+other = "Arsip"
+
+[allSome]
+other = "Semua {{ .Some }}"
+
+[category]
+other = "Kategori"
+
+[categories]
+other = "Kategori"
+
+[collection]
+other = "Koleksi"
+
+[collections]
+other = "Koleksi"
+
+[tag]
+other = "Tag"
+
+[tags]
+other = "Tag"
+
+[posts]
+other = "Artikel"
+# === Taxonomy ===
+
+# === Section ===
+[section]
+recentlyUpdated = "Baru diperbarui"
+
+[section.totalWordCount]
+other = "Total sekitar {{ .Count }} kata"
+
+[section.archiveCounter]
+other = "Total {{ .Count }} artikel"
+# === Section ===
+
+# === Pagination ===
+[pagination]
+more = "Lainnya"
+# === Pagination ===
+
+# === partials/header.html ===
+[header]
+selectLanguage = "Pilih Bahasa"
+noMoretTranslations = "Tidak ada terjemahan lain"
+switchTheme = "Ganti Tema"
+# === partials/header.html ===
+
+# === partials/footer.html ===
+[footer]
+poweredBySome = "<i class='fa-solid fa-feather-pointed'></i> by {{ .Hugo }} | <i class='fa-solid fa-brush'></i> {{ .Theme }}"
+siteUV = "Jumlah Pengunjung"
+sitePV = "Jumlah Kunjungan"
+siteRunning = "Situs berjalan…"
+# === partials/footer.html ===
+
+# === partials/comment.html ===
+[comment]
+valineLang = "id"
+valinePlaceholder = "Tulis komentar…"
+facebookLanguageCode = "id"
+# === partials/comment.html ===
+
+# === partials/assets.html ===
+[assets]
+search = "Cari"
+searchPlaceholder = "Cari judul atau isi artikel…"
+searchIn = "Cari di {{ . }}"
+gotoResultsPage = "Pergi ke halaman hasil pencarian…"
+clear = "Bersihkan"
+cancel = "Batal"
+noResultsFound = "Tidak ada hasil ditemukan"
+copyToClipboard = "Salin ke clipboard"
+editLockTitle = "Kunci blok kode agar tidak bisa diedit"
+editUnLockTitle = "Buka kunci blok kode agar bisa diedit"
+cookieconsentMessage = "Situs ini menggunakan Cookies untuk meningkatkan pengalaman Anda."
+cookieconsentDismiss = "Setuju"
+cookieconsentLink = "Pelajari lebih lanjut"
+# === partials/assets.html ===
+
+# === partials/plugin/share.html ===
+[shareOn]
+other = "Bagikan ke"
+# === partials/plugin/share.html ===
+
+# === posts/single.html ===
+[single]
+contents = "Daftar Isi"
+pin = "Sematkan"
+repost = "Bagikan ulang"
+publishedOnDate = "Diterbitkan pada {{ .Date }}"
+views = "kali dilihat"
+comments = "komentar"
+author = "Penulis"
+updatedOnDate = "Diperbarui pada {{ .Date }}"
+readMarkdown = "Baca dokumen asli"
+viewSource = "Lihat sumber"
+editThisPage = "Edit halaman ini"
+reportIssue = "Laporkan masalah"
+openInEditor = "Buka di editor"
+back = "Kembali"
+home = "Beranda"
+readMore = "Baca selengkapnya"
+expirationReminder = "Artikel ini terakhir diperbarui pada {{ .Date }}, isinya mungkin sudah lama."
+encryptedAbstract = "Artikel ini terenkripsi, isi tidak dapat dilihat!"
+encryptedMessage = "Masukkan kata sandi"
+password = "Kata Sandi"
+enterBtn = "Masuk"
+encryptyAgain = "Enkripsi ulang"
+relatedContent = "Konten terkait"
+
+[single.includedIn]
+categories = "Termasuk dalam {{ .Categories }}"
+collections = "Termasuk dalam {{ .Collections }}"
+both = "Termasuk dalam {{ .Categories }} dan {{ .Collections }}"
+
+[single.wordCount]
+other = "{{ .Count }} kata"
+
+[single.fuzzyWordCount]
+other = "Sekitar {{ .Count }} kata"
+
+[single.readingTime]
+other = "Perkiraan baca {{ .Count }} menit"
+
+[single.reward]
+donate = "Dukung"
+wechatpay = "WeChat"
+alipay = "Alipay"
+paypal = "PayPal"
+bitcoin = "Bitcoin"
+# === posts/single.html ===
+
+# === 404.html ===
+[pageNotFound]
+other = "Halaman tidak ditemukan"
+
+[pageNotFoundText]
+other = "Maaf, halaman yang Anda cari tidak ada."
+# === 404.html ===
+
+# === offline ===
+[offlineTitle]
+other = "Offline"
+
+[offlineText]
+other = "Anda tidak terhubung ke Internet, memulihkan cache yang tersedia."
+# === offline ===
+
+# === GitHub Alert ===
+[alert]
+note = "Catatan"
+tip = "Tips"
+important = "Penting"
+warning = "Peringatan"
+caution = "Hati-hati"
+# === GitHub Alert ===
+
+# === Task lists ===
+[taskList]
+" " = "Belum selesai"
+"x" = "Selesai"
+"/" = "Sedang berlangsung"
+"-" = "Dibatalkan"
+"<" = "Direncanakan"
+">" = "Dijadwalkan ulang"
+"!" = "Penting"
+"?" = "Pertanyaan"
+# === Task lists ===
+
+# === shortcodes/admonition.html ===
+[admonition]
+note = "Catatan"
+abstract = "Abstrak"
+info = "Info"
+todo = "To-do"
+tip = "Tips"
+success = "Sukses"
+question = "Pertanyaan"
+warning = "Peringatan"
+failure = "Gagal"
+danger = "Bahaya"
+bug = "Bug"
+example = "Contoh"
+quote = "Kutipan"
+# === shortcodes/admonition.html ===
+
+# === shortcodes/version.html ===
+[version]
+new = "Baru"
+changed = "Diubah"
+deleted = "Dihapus"
+# === shortcodes/version.html ===
