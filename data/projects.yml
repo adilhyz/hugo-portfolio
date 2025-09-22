@@ -1,0 +1,17 @@
+- title: Dikembangkan Oleh Saya
+  description: Beberapa proyek open-source yang telah saya kembangkan。
+  order: desc
+  orderby: star
+  totalStars: true
+  repos:
+    - adilhyz/dotfiles-v1
+    - adilhyz/adilhyz-repo
+    - adilhyz/root-config
+    - adilhyz/kasirsan
+- title: Kontribusi saya
+  description: Berikut ini adalah beberapa proyek sumber terbuka yang ikut berkontribusi。
+  contentAdapters: false
+  order: desc
+  orderby: star
+  repos:
+    - gh0stzk/dotfiles

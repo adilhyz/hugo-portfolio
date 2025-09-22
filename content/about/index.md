@@ -2,6 +2,7 @@
 title: About
 subtitle: Yokoso!
 date: 2023-09-20T21:09:48+07:00
+weight: -999
 comment: false
 twemoji: false
 lightgallery: false
