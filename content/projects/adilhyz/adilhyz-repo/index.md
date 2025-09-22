@@ -12,7 +12,7 @@ tags:
 featuredImage: repo.png
 ---
 
-`https://adilhyz.github.io/adilhyz-repo`
+[**`https://adilhyz.github.io/adilhyz-repo`**](https://adilhyz.github.io/adilhyz-repo)
 
 ## Package List
 

@@ -54,18 +54,18 @@ events:
 ```
 {{< /details >}}
 
-## Fetch
+## Sistem Yang Saya Gunakan
 
-
-``` shell
-      /\         sanrei@adilhyz
-     /  \        OS: Arch
-    /\   \       Packages: (pacman)
-   /      \      Shell: zsh
-  /   ,,   \     WM: bspwm, hyprland
- /   |  |  -\    Kernel: 6.15.x Arch / zen2-1-zen
-/_-''    ''-_\   Memory: 11777MiB (12Gib)
-```
+> [!NOTE] FixIt
+> ``` shell {title="neofetch"}
+>       /\         sanrei@adilhyz
+>      /  \        OS: Arch
+>     /\   \       Packages: (pacman)
+>    /      \      Shell: zsh
+>   /   ,,   \     WM: bspwm, hyprland
+>  /   |  |  -\    Kernel: 6.15.x Arch / zen2-1-zen
+> /_-''    ''-_\   Memory: 11777MiB (12Gib)
+> ```
 
 ---
 

@@ -7,7 +7,7 @@
   identifier = "archives"
   pre = ""
   post = ""
-  name = "Arsip"
+  name = "Archives"
   url = "/archives/"
   title = ""
   weight = 1
@@ -50,11 +50,11 @@
 [[main]]
   identifier = "fixit"
   parent = "archives"
-  pre = '<img class="fixit-icon" src="https://adilhyz.github.io/assets//profile.webp" alt="FixIt logo">'
+  pre = '<img class="fixit-icon" src="https://adilhyz.github.io/profile.webp" alt="Adilhyz">'
   post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
-  name = "FixIt"
-  url = "https://fixit.adilhyz.cn/"
-  title = "FixIt 官网"
+  name = "Collections"
+  url = "https://adilhyz.github.io/"
+  title = "Koleksi"
   weight = 4
   [main.params]
     divided = true
@@ -75,7 +75,7 @@
   post = ""
   name = "Friends"
   url = "/friends/"
-  title = "Friends"
+  title = "Amigos"
   weight = 5
   [main.params]
     icon = "fa-solid fa-users"
