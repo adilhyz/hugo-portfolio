@@ -14,7 +14,7 @@ quicklyUpgrade = "Gunakan perintah berikut untuk upgrade cepat:"
 [baseof]
 backToTop = "Kembali ke atas"
 viewComments = "Lihat komentar"
-noscript = "Situs ini bekerja paling baik dengan JavaScript diaktifkan."
+noscript = "Situs ini bekerja paling baik dengan JavaScript."
 # === baseof ===
 
 # === Taxonomy ===
@@ -133,9 +133,9 @@ encryptyAgain = "Enkripsi ulang"
 relatedContent = "Konten terkait"
 
 [single.includedIn]
-categories = "Termasuk dalam {{ .Categories }}"
-collections = "Termasuk dalam {{ .Collections }}"
-both = "Termasuk dalam {{ .Categories }} dan {{ .Collections }}"
+categories = "Dalam {{ .Categories }}"
+collections = "Dalam {{ .Collections }}"
+both = "Dalam {{ .Categories }} dan {{ .Collections }}"
 
 [single.wordCount]
 other = "{{ .Count }} kata"

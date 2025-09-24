@@ -11,14 +11,15 @@
 [page.comment]
   enable = true
   [page.comment.disqus]
-        enable = true
-        # Disqus shortname to use Disqus in posts
-        shortname = "adilhyz"
+    enable = true
+    # Disqus shortname to use Disqus in posts
+    shortname = "adilhyz"
+    lazyLoad = true
 
 # FixIt 0.3.10 | NEW Busuanzi count
 [busuanzi]
   # whether to enable busuanzi count
-  enable = false
+  enable = true
   # busuanzi count core script source. Default is https://vercount.one/js
   source = "https://vercount.one/js"
   # whether to show the site views
@@ -36,6 +37,10 @@
 # FixIt 0.2.10 | NEW Analytics config
 [analytics]
   enable = true
+  [analytics.google]
+    id = "G-32DSNF8QZY"
+    # whether to anonymize IP
+    anonymizeIP = true
   [analytics.umami]
     data_website_id = "40753570-2c69-4a05-8fb7-13f0b8163a58"
     src = "https://cloud.umami.is/script.js"

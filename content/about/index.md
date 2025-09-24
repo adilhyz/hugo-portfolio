@@ -79,4 +79,4 @@ events:
 
 {{< busuanzi_embed >}}
 
-<!-- markdownlint-disable-file -->
+<!-- markdownlint-disable-file MD004 MD007 MD032 MD036 -->

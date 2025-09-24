@@ -9,7 +9,7 @@ layout: projects
 pageStyle: wide
 lightgallery: false
 autoTranslate:
-  onlyLocalLang: false
+  onlyLocalLang: true
 cascade:
   params:
     type: posts

@@ -46,7 +46,7 @@ disableThemeInject = false
 [gitInfo]
   # e.g. "https://github.com/hugo-fixit/docs"
   repo = "https://github.com/adilhyz/hugo-portfolio"
-  branch = "docs"
+  branch = "master"
   # the content directory path relative to the root of the repository
   dir = "content"
   # the issue template for reporting issue of the posts
@@ -171,7 +171,7 @@ disableThemeInject = false
     enable = true
     animate = true
     icon = "fa-solid fa-heartbeat"
-    pre = "Updated at"
+    pre = "Updated on"
     value = "2025-09-22T08:01:01+07:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
@@ -529,9 +529,9 @@ disableThemeInject = false
 # Detail config see https://github.com/Lruihao/watermark#readme
 [watermark]
 # TRANSLATE WAK
-  enable = false
+  enable = true
   # watermark's text (HTML format is supported)
-  content = '<img style="height: 0.85rem;" src="/logo.webp" alt="logo" /> 三礼'
+  content = '三礼 — Adilhyz'
   # watermark's transparency
   opacity = 0
   # watermark's width. unit: px
@@ -669,7 +669,7 @@ disableThemeInject = false
   enable = true
   # All available colors:
   # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
-  color = "blue"
+  color = "purple"
   # All available themes:
   # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
@@ -838,14 +838,14 @@ disableThemeInject = false
 # Auto translation configuration
 # See: https://github.com/xnx3/translate/
 [autoTranslate]
-  enable = false
+  enable = true
   # The translation service provider, ['client.edge', 'translate.service']
   # See: https://translate.zvo.cn/43086.html
   service = 'translate.service'
   # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
   # If not set, it will be translated to all languages
   # See the full language list: https://api.translate.zvo.cn/language.json
-  languages = ["indonesian", "english"] 
+  languages = ["english","indonesian"] 
 
   # Element IDs that needs to be ignored for translation, e.g. ["comment", ...]
   ignoreID = []
@@ -863,7 +863,7 @@ disableThemeInject = false
   ]
   # Whether to detect the local language
   detectLocalLanguage = true
-  # translate.js CDN
+  # translate.js CDN /lib/translate.js
   cdn = ""
   # Whether to enable Enterprise-level translation channel
   # If set to true, automatically switch to the best translation service

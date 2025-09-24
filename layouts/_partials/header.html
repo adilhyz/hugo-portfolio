@@ -284,6 +284,7 @@
           {{- end -}}
         {{- end -}}
         <li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="{{ T "header.switchTheme" }}">{{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}</span>
           {{- if hugo.IsMultilingual -}}
             <span class="menu-system-item language-switch">
               <span role="button" aria-label="{{ T "header.selectLanguage" }}" title="{{ T "header.selectLanguage" }}">

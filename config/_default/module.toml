@@ -7,6 +7,11 @@
   path = "github.com/hugo-fixit/fixit-bundle"
 [[imports]]
   path = "github.com/hugo-fixit/shortcode-mmt-netease"
+# ADD
+[[imports]]
+  path = "github.com/hugo-fixit/FixIt"
+[[imports]]
+  path = "github.com/hugo-fixit/shortcode-missing-translation"
 
 [hugoVersion]
   extended = true

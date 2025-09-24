@@ -10,7 +10,6 @@
     {{- $cdn = $autoTranslate.cdn -}}
   {{- end -}}
   {{- $source := $cdn | default "lib/translate.js" -}}
-  {{- dict "Source" "js/translate.aing.js" "Defer" true | dict "Page" . "Data" | partial "store/script.html" -}}
   {{- dict "Source" $source "Fingerprint" $fingerprint "Defer" true "Minify" hugo.IsProduction | dict "Page" . "Data" | partial "store/script.html" -}}
 
   {{- /* Config script */ -}}
@@ -38,10 +37,6 @@
     {{- $configJS = add $configJS "console.log('Auto Translate config:', window.ATConfig);" -}}
   {{- end -}}
   {{- $configJS | dict "Content" | dict "Page" . "Data" | partial "store/script.html" -}}
-
-{{- /* Override translate.js default language */ -}}
-{{- dict "Content" "if (window.translate && translate.language) { translate.language.defaultLanguage = 'indonesian'; }" | dict "Page" . "Data" | partial "store/script.html" -}}
-
 
   {{- /* translate.fixit.js */ -}}
   {{- $options := dict "targetPath" "js/translate.fixit.min.js" "minify" hugo.IsProduction -}}
