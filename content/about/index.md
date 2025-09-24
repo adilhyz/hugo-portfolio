@@ -1,8 +1,8 @@
 ---
+weight: 1
 title: About
 subtitle: Yokoso!
 date: 2023-09-20T21:09:48+07:00
-weight: -999
 comment: false
 twemoji: false
 lightgallery: false
@@ -56,14 +56,14 @@ events:
 
 ## Sistem Yang Saya Gunakan
 
-> [!NOTE] FixIt
+> [!NOTE] Fetch System
 > ``` shell {title="neofetch"}
 >       /\         sanrei@adilhyz
 >      /  \        OS: Arch
 >     /\   \       Packages: (pacman)
 >    /      \      Shell: zsh
 >   /   ,,   \     WM: bspwm, hyprland
->  /   |  |  -\    Kernel: 6.15.x Arch / zen2-1-zen
+>  /   |  |  -\    Kernel: 6.16.x Arch / zen1-1-zen
 > /_-''    ''-_\   Memory: 11777MiB (12Gib)
 > ```
 

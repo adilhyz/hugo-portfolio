@@ -72,9 +72,9 @@ disableThemeInject = false
 
 # Search config
 [search]
-  enable = false
+  enable = true
   # type of search engine ["algolia", "fuse", "cse", "post-chat"]
-  type = "algolia"
+  type = "fuse"
   # max index length of the chunked content
   contentLength = 4000
   # placeholder of the search bar
@@ -278,7 +278,7 @@ disableThemeInject = false
     [social.youtube.icon]
       Class = "fa-brands fa-youtube fa-fw"
   [social.instagram]
-    id = "https://instagram.com/sanrei30_"
+    id = "sanrei30_"
     weight = 20
     Template = ""
     Title = "My Insta"
@@ -762,6 +762,7 @@ disableThemeInject = false
     "inject/fixit-docs-bookmark.html",
     "inject/shortcode-rewards.html",
     "custom/page-style.html",
+    "custom/gtag.html",
   ]
   menuDesktop = [
     "inject/translate-menu-desktop.html",

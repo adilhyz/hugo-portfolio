@@ -53,7 +53,7 @@
   pre = '<img class="fixit-icon" src="https://adilhyz.github.io/profile.webp" alt="Adilhyz">'
   post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
   name = "Collections"
-  url = "https://adilhyz.github.io/"
+  url = "/collections/"
   title = "Koleksi"
   weight = 4
   [main.params]
@@ -68,7 +68,7 @@
   weight = 4
   [main.params]
     # icon = "fa-solid fa-code-branch"
-    icon = "fa-solid fa-lightbulb fa-shake"
+    icon = "fa-solid fa-code-branch fa-shake"
 [[main]]
   identifier = "friends"
   pre = ""
