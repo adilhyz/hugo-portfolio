@@ -71,9 +71,10 @@ switchTheme = "Ganti Tema"
 
 # === partials/footer.html ===
 [footer]
-poweredBySome = "<i class='fa-solid fa-feather-pointed'></i> by {{ .Hugo }} | <i class='fa-solid fa-brush'></i> {{ .Theme }}"
+poweredBySome = "<i class='gear-icon gear-times fa-solid fa-gear fa-spin'></i> {{ .Github }} | <i class='fa-solid fa-feather-pointed'></i> by {{ .Hugo }} | <i class='fa-solid fa-brush'></i> {{ .Theme }}"
 siteUV = "Jumlah Pengunjung"
 sitePV = "Jumlah Kunjungan"
+days = "Hari"
 siteRunning = "Situs berjalan…"
 # === partials/footer.html ===
 

@@ -163,6 +163,21 @@ $blog-bg-color: #fafaf8 !default;
   }
 }
 
+// WAK
+
+#footag a.active {
+  color: var(--#{$prefix}neutral);
+  font-weight: bold;
+}
+
+.gear-icon {
+  color: #14dc50;
+}
+
+.gear-times {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
 // Custom font
 @font-face {
   font-family: mono;

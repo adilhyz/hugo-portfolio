@@ -10,6 +10,8 @@ tags:
   - ArchLinux
   - dotfiles
 featuredImage: repo.png
+toc:
+  ordered: false
 ---
 
 [**`https://adilhyz.github.io/adilhyz-repo`**](https://adilhyz.github.io/adilhyz-repo)

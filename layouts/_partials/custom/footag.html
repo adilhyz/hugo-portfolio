@@ -1,0 +1,12 @@
+{{- $footerMenu := site.Menus.footer -}}
+
+<div id="footag" class="text-center">
+  <span>
+    {{- range $i, $item := $footerMenu -}}
+      {{- if gt $i 0 -}} | {{- end -}}
+      <a href="{{ $item.URL | relLangURL }}">
+        {{ $item.Name }}
+      </a>
+    {{- end -}}
+  </span>
+</div>

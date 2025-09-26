@@ -11,6 +11,8 @@ categories:
 collections:
   - project
 featuredImage: https://raw.githubusercontent.com/adilhyz/dotfiles-v1/master/preview/z.gif
+toc:
+  ordered: false
 ---
 
 {{< admonition success "Dotfiles Bspwm! " >}}

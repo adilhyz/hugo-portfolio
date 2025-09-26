@@ -40,7 +40,7 @@ disableThemeInject = false
   name = "Adilhyz"
   email = "sandyadilhayyi@gmail.com"
   link = "https://github.com/adilhyz"
-  avatar = "/images/avatar.jpg"
+  avatar = "/images/aing.png"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
@@ -128,7 +128,7 @@ disableThemeInject = false
     # subtitle name
     name = "サンレイ"
     # whether to use typeit animation for subtitle name
-    typeit = false
+    typeit = true
 
 # FixIt 0.2.18 | NEW Breadcrumb config
 [breadcrumb]
@@ -166,13 +166,15 @@ disableThemeInject = false
     enable = true
     hugoLogo = false
     themeLogo = false
+    githubLogo = false
+
   # FixIt 0.2.17 | CHANGED Site creation time
   [footer.siteTime]
     enable = true
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = "Updated on"
-    value = "2025-09-22T08:01:01+07:00"
+    value = "2025-09-25T08:01:01+07:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
     powered = 1
@@ -234,7 +236,7 @@ disableThemeInject = false
     # Gravatar Email for preferred avatar in home page
     gravatarEmail = ""
     # URL of avatar shown in home page
-    avatarURL = "/images/avatar.jpg"
+    avatarURL = "https://github.com/adilhyz.png"
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = "about"
     # title shown in home page (HTML format is supported)
@@ -491,7 +493,7 @@ disableThemeInject = false
     [page.library.js]
       # someJavascript = "some.js"
       # Or
-      # someJavascript = "https://cdn.example.com/some.js"
+      # someJavascript = "https://code.jquery.com/jquery-3.7.1.min.js"
   # Page SEO config
   [page.seo]
     # image URL
@@ -499,7 +501,7 @@ disableThemeInject = false
     # Publisher info
     [page.seo.publisher]
       name = "Adilhyz"
-      logoUrl = "/images/avatar.jpg"
+      logoUrl = "/images/aing.png"
 
 # TypeIt config
 [typeit]
@@ -643,7 +645,7 @@ disableThemeInject = false
   enable = true
   # Gravatar host, default: "www.gravatar.com"
   host = "gravatar.loli.net" # "cravatar.cn", "gravatar.loli.net"
-  style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+  style = "wavatar" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
 
 # FixIt 0.2.16 | NEW Back to top
 [backToTop]
@@ -702,7 +704,7 @@ disableThemeInject = false
   frameWidth = ""     # e.g. "375px"
   frameHeight = ""    # e.g. "600px"
   # only for magic mode
-  userIcon = "/images/avatar.jpg"
+  userIcon = "/images/aing.png"
   defaultChatQuestions = [
     "你是谁?",
     "Lruihao 是谁?",
@@ -778,7 +780,9 @@ disableThemeInject = false
     "custom/adsar.html",
   ]
   comment = []
-  footer = []
+  footer = [
+    "custom/footag.html"
+  ]
   widgets = [
     # "custom/wechat-box.html",
   ]
@@ -791,7 +795,7 @@ disableThemeInject = false
   ]
   postFooterBefore = []
   postFooterAfter = [
-    "custom/post-footer-after.html"
+    # "custom/post-footer-after.html"
   ]
 
 # FixIt 0.2.15 | NEW Developer options
@@ -826,7 +830,7 @@ disableThemeInject = false
   onlyPublic = true
   # Default categories and collections
   categories = ["GitHub"]
-  collections = ["project"]
+  collections = ["project", "post"]
   # Ignore repos in the ignore list
   ignoreList = []
   [projectsAdapters.params]

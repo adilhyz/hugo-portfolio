@@ -50,8 +50,9 @@
 [[main]]
   identifier = "fixit"
   parent = "archives"
-  pre = '<img class="fixit-icon" src="https://adilhyz.github.io/profile.webp" alt="Adilhyz">'
+  pre = '<i class="fa-solid fa-layer-group"></i>'
   post = '<i class="fa-solid fa-external-link-alt fa-fw fa-xs text-secondary"></i>'
+  icon = "fa-solid fa-layer-group"
   name = "Collections"
   url = "/collections/"
   title = "Koleksi"
@@ -65,20 +66,31 @@
   name = "Projects"
   url = "/projects/"
   title = "Projek yang saya kembangkan"
-  weight = 4
+  weight = 5
   [main.params]
     # icon = "fa-solid fa-code-branch"
     icon = "fa-solid fa-code-branch fa-shake"
 [[main]]
-  identifier = "friends"
+  identifier = "posts"
   pre = ""
   post = ""
-  name = "Friends"
-  url = "/friends/"
-  title = "Amigos"
-  weight = 5
+  name = "Blog"
+  url = "/posts/"
+  title = "Blog Saya"
+  weight = 6
   [main.params]
-    icon = "fa-solid fa-users"
+    # icon = "fa-solid fa-code-branch"
+    icon = "fa-solid fa-pencil fa-beat"
+# [[main]]
+#   identifier = "friends"
+#   pre = ""
+#   post = ""
+#   name = "Friends"
+#   url = "/friends/"
+#   title = "Amigos"
+#   weight = 7
+#   [main.params]
+#     icon = "fa-solid fa-users"
 [[main]]
   identifier = "rss"
   pre = ""
@@ -86,7 +98,7 @@
   name = "RSS"
   url = "/index.xml"
   title = "RSS"
-  weight = 6
+  weight = 7
   [main.params]
     icon = "fa-solid fa-rss"
     type = "desktop"
@@ -112,3 +124,18 @@
     class = "text-center"
     icon = "fa-brands fa-github fa-lg"
     type = "mobile"
+
+[[footer]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 8
+
+[[footer]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 9
+
+[[footer]]
+  name = "Friends"
+  url = "/friends/"
+  weight = 10

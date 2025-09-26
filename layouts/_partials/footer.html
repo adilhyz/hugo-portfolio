@@ -11,17 +11,27 @@
         <div class="footer-line powered{{ with $footerConfig.order.powered }} order-{{ . }}{{ end }}">
           {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo %v">{hugoLogo}Hugo</a>` hugo.Version -}}
           {{- $theme := printf `<a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt %v">{themeLogo}FixIt</a>` (hugo.Store.Get "version") -}}
+          {{- $github := printf `<a href="https://github.com/%s/%s.github.io/" target="_blank" rel="external" title="GitHub Pages">%sGitHub Pages</a>` site.Params.social.GitHub site.Params.social.GitHub "{githubLogo}" -}}
+
           {{- if $footerConfig.powered.hugoLogo -}}
-          {{- $hugoLogo := printf `<img class="hugo-icon" src="%v" alt="Hugo logo" /> ` (resources.Get "images/hugo.svg" | minify).RelPermalink -}}
+            {{- $hugoLogo := printf `<img class="hugo-icon" src="%v" alt="Hugo logo" /> ` (resources.Get "images/hugo.svg" | minify).RelPermalink -}}
             {{- $hugo = replace $hugo "{hugoLogo}" $hugoLogo -}}
           {{- end -}}
           {{- if $footerConfig.powered.themeLogo -}}
             {{- $themeLogo := printf `<img class="fixit-icon" src="%v" alt="FixIt logo" /> ` (resources.Get "images/fixit.svg" | minify).RelPermalink -}}
             {{- $theme = replace $theme "{themeLogo}" $themeLogo -}}
           {{- end -}}
+          {{- if $footerConfig.powered.githubLogo -}}
+            {{- $githubLogo := `<i class="fixit-icon fa-brands fa-github"></i> ` -}}
+            {{- $github = replace $github "{githubLogo}" $githubLogo -}}
+          {{- end -}}
+
           {{- $hugo = replace $hugo "{hugoLogo}" "" -}}
           {{- $theme = replace $theme "{themeLogo}" "" -}}
-          {{- dict "Hugo" $hugo "Theme" $theme | T "footer.poweredBySome" | safeHTML }}
+          {{- $github = replace $github "{githubLogo}" "" -}}
+
+          {{- dict "Hugo" $hugo "Theme" $theme "Github" $github | T "footer.poweredBySome" | safeHTML }}
+
         </div>
       {{- end -}}
 

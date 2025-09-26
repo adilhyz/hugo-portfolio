@@ -3,6 +3,11 @@ title: CV
 subtitle: "Curriculum vitae。"
 date: 2025-09-24T11:33:48+07:00
 description: Curriculum vitae。
+comment: false
+lightgallery: true
+toc:
+  ordered: false
+hiddenAdapters: true
 keywords:
   - 'Cv'
   - 'CV'
@@ -19,7 +24,7 @@ Sumedang 45371, West Java | sandyadilhayyi@gmail.com | https://adilhyz.github.io
 
 ## EDUCATION 
 <!-- > [!INFO] `2011 - 2024` -->
- ```timeline {reverse=true, animation=true, height="280px")
+```timeline {reverse=true, animation=true}
  events:
     - timestamp: 2021 - 2024
       content: SMKN SITURAJA | `SOFTWARE ENGINEER`
@@ -27,7 +32,7 @@ Sumedang 45371, West Java | sandyadilhayyi@gmail.com | https://adilhyz.github.io
       size: large
     - timestamp: 2021
       content: SMAN SITURAJA | `SOCIAL STUDIES`
- ```
+```
 
 ## LANGUAGES
 
@@ -48,7 +53,7 @@ Sumedang 45371, West Java | sandyadilhayyi@gmail.com | https://adilhyz.github.io
 
 >
 >{{< admonition type=quote title="`JANUARY 2023 - MARCH 2023`" open=true >}}
->{{< image src="cropped-sadigit-logo.png" caption="" >}}
+>{{< image src="cropped-sadigit-logo.png" alt="SADIGIT" >}}
 >
 > PT SAWARGA DIGITAL INDONESIA | SOFTWARE DEVELOPMENT
 > {{< /admonition >}}
@@ -59,7 +64,7 @@ Sumedang 45371, West Java | sandyadilhayyi@gmail.com | https://adilhyz.github.io
 >
 >
 >{{< admonition type=quote title="`NOVEMBER 2024 - MARCH 2025`" open=true >}}
->{{< image src="im.png" caption="" >}}
+>{{< image src="im.png" alt="IM Japan" >}}
 >
 > IM JAPAN | APPRENTICESHIP
 > {{< /admonition >}}
