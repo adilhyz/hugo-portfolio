@@ -1,0 +1,9 @@
+// Custom admonition style
+$custom-admonition-map: (
+  kaminari: (
+    color: #6eba97,
+    bg-color: rgba(110, 186, 151, 0.1),
+  ),
+);
+
+$admonition-color-map: map-merge($admonition-color-map, $custom-admonition-map);
