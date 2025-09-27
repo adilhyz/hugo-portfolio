@@ -29,3 +29,10 @@ ignoreLogs = [
   "error-missing-instagram-accesstoken",
   "warning-dev-version"
 ]
+
+[outputs]
+  home    = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term    = ["HTML", "RSS"]
+  page = ["HTML", "RSS"]

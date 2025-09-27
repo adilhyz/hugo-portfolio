@@ -214,7 +214,7 @@ disableThemeInject = false
   archives = true
   section = true
   term = true
-  rss = false
+  rss = true
   days = 30
   maxCount = 10
 
@@ -257,7 +257,7 @@ disableThemeInject = false
 
 # Social config about the author
 [social]
-  GitHub = "Adilhyz"
+  # GitHub = "Adilhyz"
   Email = "sandyadilhayyi@gmail.com"
   RSS = true
   Weibo = ""
@@ -272,6 +272,13 @@ disableThemeInject = false
   QQGroup = ""
   CSDN = ""
   # custom social links like the following
+  [social.github]
+    id = "adilhyz"
+    weight = 18
+    Template = ""
+    Title = "GitHub"
+    [social.github.icon]
+      Class = "fa-brands fa-github fa-fw"
   [social.youtube]
     id = "https://youtube.com/@adilhyz"
     weight = 19
@@ -642,10 +649,10 @@ disableThemeInject = false
 
 # FixIt 0.2.14 | NEW Gravatar config
 [gravatar]
-  enable = true
+  enable = false
   # Gravatar host, default: "www.gravatar.com"
   host = "gravatar.loli.net" # "cravatar.cn", "gravatar.loli.net"
-  style = "wavatar" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+  style = "retro" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
 
 # FixIt 0.2.16 | NEW Back to top
 [backToTop]
@@ -773,7 +780,7 @@ disableThemeInject = false
     "inject/translate-menu-mobile.html",
   ]
   profile = [
-    "custom/profile.html",
+    # "custom/profile.html",
   ]
   aside = [
     # "custom/aside.html",

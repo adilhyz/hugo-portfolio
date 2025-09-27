@@ -225,6 +225,8 @@ $blog-bg-color: #fafaf8 !default;
     &.posts {
       .home-avatar img {
         width: 6rem;
+        position: relative;
+        top: -5px;
       }
     }
   }
@@ -239,4 +241,102 @@ $blog-bg-color: #fafaf8 !default;
       color: inherit;
     }
   }
+}
+
+.home .home-profile .home-title {
+  font-size: 1.25rem; /* 25rem kegedean banget 😅 */
+  font-weight: bold;
+}
+
+.home .home-profile .home-title:not(:empty) {
+  margin-top: 0.5rem;
+}
+
+.home .home-profile .home-subtitle {
+  margin-top: 1rem;
+}
+
+.home.posts .home-avatar img {
+    margin-top: 1rem;
+    width: 6rem;
+    position: relative;
+    top: -5px;
+}
+
+.home.posts .single.summary::after,
+.home.posts .single.summary:after,
+.home.posts .home-profile::after {
+  content: none; // Split Content
+}
+
+.home.posts .single.summary {
+  margin-bottom: 1.7rem; // Split bottom margin
+}
+
+.home.posts .summary .content,
+.home .home-profile .home-disclaimer,
+.single .post-meta {
+    color: #4d4d4d;
+}
+.single,
+.home-profile {
+    background-color: $global-background-color;
+    opacity: 0.86;
+    padding: 10px;
+
+    [data-theme='dark'] & {
+        background: $global-background-color-dark;
+        opacity: 0.86;
+        padding: 10px;
+    }
+}
+
+.home-profile {
+    // background: url('../background.svg'), hsl(50, 100%, 99%) center;
+    transition: background ease 0.2s, color ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home.posts .summary {
+    border: 3px dashed #ccc;
+    border-bottom: 0;
+    padding-top: 0;
+    box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
+    padding-bottom: 0;
+    [data-theme='dark'] & {
+        border: 3px dashed #ccc;
+        border-bottom: 0;
+        padding-top: 0;
+        box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
+        padding-bottom: 0;
+    }
+}
+.single .single-title {
+    padding: 0;
+}
+.single .post-footer {
+    margin: 1rem 0;
+}
+.home .home-profile .home-avatar {
+    border: 3px solid #ccc;
+    box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
+    background-size: 100% 100%;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 3px;
+    // height: auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    // background-size: auto 8rem;
+    background-image: url(https://raw.githubusercontent.com/adilhyz/adilhyz/refs/heads/output/github-contribution-grid-snake.svg);
+    [data-theme='dark'] & {
+        background-image: url(https://raw.githubusercontent.com/adilhyz/adilhyz/refs/heads/output/github-contribution-grid-snake-dark.svg);
+        // }
+        // background-image: url("https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg");
+        // [data-theme="dark"] & {
+        //     background-image: url("https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg");
+    }
 }

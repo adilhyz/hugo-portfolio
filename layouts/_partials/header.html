@@ -38,59 +38,82 @@
     <nav>
       <ul class="menu">
         {{- range .Site.Menus.main -}}
-          {{- $url := .URL -}}
-          {{- with $url -}}
-            {{- $url = . | relLangURL -}}
-          {{- end -}}
-          {{- with .Page -}}
-            {{- $url = .RelPermalink -}}
-          {{- end -}}
-          {{- if (ne .Params.Draft true) | or $buildDrafts | and (ne .Params.Type "mobile") -}}
-            <li class="menu-item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with .Params.Class }} {{ . }}{{ end }}{{ if .HasChildren }} has-children{{ end }}">
-              <a class="menu-link"
-                {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
-                {{- with .Title }} title="{{ . }}"{{ end }}
-                {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
-              >
-                {{- with .Pre -}}{{- . | safeHTML }} {{ end }}
-                {{- with .Params.Icon -}}{{ dict "Class" (printf "%v fa-fw fa-sm" .) | partial "plugin/icon.html" }} {{ end }}
-                {{- .Name }}
-                {{- with .Post }} {{ . | safeHTML -}}{{- end -}}
-              </a>
-              {{- if .HasChildren -}}
-                {{ dict "Class" "dropdown-icon fa-solid fa-chevron-down" | partial "plugin/icon.html" }}
-                <ul class="sub-menu">
-                  {{- range $k, $v := .Children -}}
-                    {{- $url := $v.URL -}}
-                    {{- with $url -}}
-                      {{- $url = . | relLangURL -}}
-                    {{- end -}}
-                    {{- with $v.Page -}}
-                      {{- $url = .RelPermalink -}}
-                    {{- end -}}
-                    {{- if (ne $v.Params.Draft true) | or $buildDrafts | and (ne $v.Params.Type "mobile") -}}
-                      {{- if $k | and $v.Params.Divided -}}
-                        <li class="menu-item-divider" aria-hidden="true"></li>
+          {{- $isRSS := eq .Identifier "rss" -}}
+
+          {{- if $isRSS -}}
+            {{ with $.OutputFormats.Get "RSS" }}
+              <li class="menu-item{{ with $.Params.Class }} {{ . }}{{ end }}">
+                <a class="menu-link" href="{{ .RelPermalink }}" title="RSS">
+                  <i class="fa-solid fa-rss fa-fw fa-sm"></i> RSS
+                </a>
+              </li>
+            {{ end }}
+          {{- else -}}
+            {{- $url := .URL -}}
+            {{- with $url -}}
+              {{- $url = . | relLangURL -}}
+            {{- end -}}
+            {{- with .Page -}}
+              {{- $url = .RelPermalink -}}
+            {{- end -}}
+
+            {{- if (ne .Params.Draft true) | or $buildDrafts | and (ne .Params.Type "mobile") -}}
+              <li class="menu-item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with .Params.Class }} {{ . }}{{ end }}{{ if .HasChildren }} has-children{{ end }}">
+                <a class="menu-link"
+                  {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
+                  {{- with .Title }} title="{{ . }}"{{ end }}
+                  {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
+                >
+                  {{- with .Pre -}}{{ . | safeHTML }} {{ end }}
+                  {{- with .Params.Icon -}}{{ dict "Class" (printf "%v fa-fw fa-sm" .) | partial "plugin/icon.html" }} {{ end }}
+                  {{- .Name }}
+                  {{- with .Post }} {{ . | safeHTML }}{{ end }}
+                </a>
+
+                {{- if .HasChildren -}}
+                  {{ dict "Class" "dropdown-icon fa-solid fa-chevron-down" | partial "plugin/icon.html" }}
+                  <ul class="sub-menu">
+                    {{- range $k, $v := .Children -}}
+                      {{- $url := $v.URL -}}
+                      {{- with $url -}}
+                        {{- $url = . | relLangURL -}}
                       {{- end -}}
-                      <li class="menu-item{{ if $.IsMenuCurrent `main` $v | or ($.HasMenuCurrent `main` $v) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with $v.Params.Class }} {{ . }}{{ end }}">
-                        <a class="menu-link"
-                          {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
-                          {{- with $v.Title }} title="{{ . }}"{{ end }}
-                          {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
-                        >
-                          {{- with $v.Pre -}}{{- . | safeHTML }} {{ end }}
-                          {{- with $v.Params.Icon -}}{{ dict "Class" (printf "%v fa-fw fa-sm" .) | partial "plugin/icon.html" }} {{ end }}
-                          {{- $v.Name }}
-                          {{- with $v.Post }} {{ . | safeHTML -}}{{- end -}}
-                        </a>
-                      </li>
+                      {{- with $v.Page -}}
+                        {{- $url = .RelPermalink -}}
+                      {{- end -}}
+                      {{- if (ne $v.Params.Draft true) | or $buildDrafts | and (ne $v.Params.Type "mobile") -}}
+                        {{- if $k | and $v.Params.Divided -}}
+                          <li class="menu-item-divider" aria-hidden="true"></li>
+                        {{- end -}}
+                        <li class="menu-item{{ if $.IsMenuCurrent `main` $v | or ($.HasMenuCurrent `main` $v) | or (eq $.RelPermalink $url) }} active{{ end }}{{ with $v.Params.Class }} {{ . }}{{ end }}">
+                          <a class="menu-link"
+                            {{- with $url }} href="{{ $url }}"{{ else }} href="javascript:void(0);"{{ end }}
+                            {{- with $v.Title }} title="{{ . }}"{{ end }}
+                            {{- if (urls.Parse $url).Host }} rel="noopener noreferrer" target="_blank"{{ end -}}
+                          >
+                            {{- with $v.Pre -}}{{ . | safeHTML }} {{ end }}
+                            {{- with $v.Params.Icon -}}{{ dict "Class" (printf "%v fa-fw fa-sm" .) | partial "plugin/icon.html" }} {{ end }}
+                            {{- $v.Name }}
+                            {{- with $v.Post }} {{ . | safeHTML }}{{ end }}
+                          </a>
+                        </li>
+                      {{- end -}}
                     {{- end -}}
-                  {{- end -}}
-                </ul>
-              {{- end -}}
-            </li>
+                  </ul>
+                {{- end -}}
+              </li>
+            {{- end -}}
           {{- end -}}
         {{- end -}}
+        {{/* Tambahin menu RSS otomatis */}}
+        {{/*  {{ with .OutputFormats.Get "RSS" }}
+          <li class="menu-item text-center">
+            <a class="menu-link" href="{{ .RelPermalink }}" title="RSS">
+              <i class="fa-solid fa-rss fa-fw fa-sm"></i> RSS
+            </a>
+          </li>
+        {{ end }}  */}}
+
         {{- if .Site.Menus.main -}}
           <li class="menu-item delimiter"></li>
         {{- end -}}
@@ -283,8 +306,20 @@
             </li>
           {{- end -}}
         {{- end -}}
+        <li class="menu-item text-center">
+          <span class="menu-system-item">
+            {{ with .OutputFormats.Get "RSS" }}
+            <a href="{{ .RelPermalink }}" title="RSS">
+              <i class="fa-solid fa-rss fa-fw fa-sm" aria-hidden="true"></i>
+            </a>
+            {{ end }}
+            <a href="https://github.com/adilhyz/" rel="noopener noreferrer" target="_blank">
+              <i class="fa-brands fa-github fa-lg fa-fw fa-sm" aria-hidden="true"></i> 
+            </a>
+          </span>
+        </li>
         <li class="menu-item menu-system">
-          <span class="menu-system-item theme-switch" title="{{ T "header.switchTheme" }}">{{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}</span>
+          <span class="menu-system-item"></span>
           {{- if hugo.IsMultilingual -}}
             <span class="menu-system-item language-switch">
               <span role="button" aria-label="{{ T "header.selectLanguage" }}" title="{{ T "header.selectLanguage" }}">

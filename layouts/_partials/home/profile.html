@@ -38,14 +38,13 @@
       {{- else -}}
         {{- dict "Src" $avatar "Alt" "Home avatar" "Width" 96 "Height" 96 "OptimConfig" $optim | partial "plugin/image.html" -}}
       {{- end -}}
+      <h1 class="home-title">
+        {{- with $profile.title -}}
+          {{- . | safeHTML -}}
+        {{- end -}}
+      </h1>
     </div>
   {{- end -}}
-
-  <h1 class="home-title">
-    {{- with $profile.title -}}
-      {{- . | safeHTML -}}
-    {{- end -}}
-  </h1>
 
   {{- with $profile.subtitle -}}
     <p class="home-subtitle">

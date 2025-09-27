@@ -96,7 +96,7 @@
   pre = ""
   post = ""
   name = "RSS"
-  url = "/index.xml"
+  url = "index.xml"
   title = "RSS"
   weight = 7
   [main.params]
@@ -112,18 +112,18 @@
   weight = 100
   [main.params]
     icon = "fa-solid fa-quote-left"
-[[main]]
-  identifier = "github"
-  pre = ""
-  post = ""
-  name = "Follow My Github"
-  url = "https://github.com/adilhyz/"
-  title = ""
-  weight = ""
-  [main.params]
-    class = "text-center"
-    icon = "fa-brands fa-github fa-lg"
-    type = "mobile"
+# [[main]]
+#   identifier = "github"
+#   pre = ""
+#   post = ""
+#   name = ""
+#   url = "https://github.com/adilhyz/"
+#   title = ""
+#   weight = ""
+#   [main.params]
+#     class = "text-center"
+#     icon = "fa-brands fa-github fa-lg"
+#     type = "mobile"
 
 [[footer]]
   name = "Tags"
