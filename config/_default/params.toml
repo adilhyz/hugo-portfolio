@@ -337,7 +337,7 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW whether to show link to view source code of the post
   linkToSource = true
   # FixIt 0.3.0 | NEW whether to show link to edit the post
-  linkToEdit = true
+  linkToEdit = false
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
   linkToReport = true
   # FixIt 0.2.13 | NEW Page style ("narrow", "normal", "wide", ...)
@@ -351,7 +351,7 @@ disableThemeInject = false
   readingTime = true
   # FixIt 0.2.17 | NEW end of post flag
   # endFlag = "（本文完）"
-  endFlag = "「Adilhyz，adilhyz GitHub，portfolio！」"
+  endFlag = "「 Adilhyz，adilhyz GitHub，サンレイ！」"
   # FixIt 0.2.18 | NEW whether to enable instant.page
   instantPage = true
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar

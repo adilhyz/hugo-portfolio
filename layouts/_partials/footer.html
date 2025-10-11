@@ -7,11 +7,13 @@
       {{- block "custom-footer" . }}{{ end -}}
 
       {{- /* Powered by Hugo and Theme - FixIt */ -}}
+      {{/*  {{- $githubID := site.Params.social.github.id -}}
+      {{- $githubURL := printf "https://github.com/%s" $githubID -}}  */}}
       {{- if ne $footerConfig.powered.enable false -}}
         <div class="footer-line powered{{ with $footerConfig.order.powered }} order-{{ . }}{{ end }}">
           {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo %v">{hugoLogo}Hugo</a>` hugo.Version -}}
           {{- $theme := printf `<a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt %v">{themeLogo}FixIt</a>` (hugo.Store.Get "version") -}}
-          {{- $github := printf `<a href="https://github.com/%s/%s.github.io/" target="_blank" rel="external" title="GitHub Pages">%sGitHub Pages</a>` site.Params.social.GitHub site.Params.social.GitHub "{githubLogo}" -}}
+          {{- $github := printf `<a href="%s" target="_blank" rel="external" title="GitHub">%sGitHub Pages</a>` site.Params.githubCorner.permalink "{githubLogo}" | safeHTML -}}
 
           {{- if $footerConfig.powered.hugoLogo -}}
             {{- $hugoLogo := printf `<img class="hugo-icon" src="%v" alt="Hugo logo" /> ` (resources.Get "images/hugo.svg" | minify).RelPermalink -}}
