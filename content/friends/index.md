@@ -1,5 +1,5 @@
 ---
-title: Tomodachi
+title: Teman
 date: 2025-08-31T12:33:48+08:00
 layout: friends
 description: 「My Friends」

@@ -487,7 +487,10 @@ disableThemeInject = false
     enable = true
     Twitter = true
     Facebook = true
+    Whatsapp = true
     Linkedin = true
+    Line = true
+    Pinterest = true
     Weibo = false
     Baidu = false
   # FixIt NEW | 0.2.7 Third-party library config
@@ -498,7 +501,8 @@ disableThemeInject = false
       # Or
       # someCSS = "https://cdn.example.com/some.css"
     [page.library.js]
-      # someJavascript = "some.js"
+      fullscreen = "js/_custom/fullscreen.js"
+      # someJavascript = "_some.js"
       # Or
       # someJavascript = "https://code.jquery.com/jquery-3.7.1.min.js"
   # Page SEO config
@@ -783,8 +787,7 @@ disableThemeInject = false
     # "custom/profile.html",
   ]
   aside = [
-    # "custom/aside.html",
-    "custom/adsar.html",
+    "custom/aside.html",
   ]
   comment = []
   footer = [
@@ -837,7 +840,7 @@ disableThemeInject = false
   onlyPublic = true
   # Default categories and collections
   categories = ["GitHub"]
-  collections = ["project", "post"]
+  collections = ["project", "post", "blog", "pentest", "note", "music"]
   # Ignore repos in the ignore list
   ignoreList = []
   [projectsAdapters.params]

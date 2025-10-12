@@ -172,11 +172,26 @@
 
     {{- /* Content */ -}}
     {{- $content := dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+    
     <div class="content" id="content"{{ with $params.endFlag }} data-end-flag="{{ . }}"{{ end }}>
       {{- if not $params.password -}}
         {{- /* Expiration Reminder */ -}}
         {{- partial "single/expiration-reminder.html" . -}}
-        {{- $content -}}
+        {{/*  {{- $content -}}  */}}
+        {{ $paragraphs := split $content "</p>" }}
+        {{ $total := len $paragraphs }}
+        {{ $rand := mod (add now.Unix .WordCount) $total }}
+
+        {{ range $i, $p := $paragraphs }}
+          {{ $clean := printf "%s</p>" $p | safeHTML }}
+          {{ $clean }}
+          {{ if eq $i $rand }}
+            <div class="my-6">
+              {{ partial "custom/adsar.html" $ }}
+            </div>
+          {{ end }}
+        {{ end }}
+
       {{- end -}}
     </div>
 

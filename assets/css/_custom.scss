@@ -97,6 +97,40 @@ $blog-bg-color: #fafaf8 !default;
   }
 }
 
+.menu-item.fullscreen-toggle {
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item.fullscreen-toggle:hover {
+  color: var(--color-primary, #888);
+  transform: scale(1.1);
+}
+
+.menu-item.fullscreen-toggle.active i {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+
+/* Mobile fine-tuning */
+@media only screen and (max-width: 680px) {
+  .menu-toggle {
+    padding-left: 0.5rem;
+  }
+
+  .menu-item.fullscreen-toggle,
+  .menu-item.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 4rem; // biar sejajar dengan .menu-toggle
+    font-size: 1.4rem; // ukuran icon mirip
+    padding: 0 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+}
+
 .single {
   .single-subtitle {
     color: #57606a;
