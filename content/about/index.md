@@ -74,7 +74,7 @@ const site = new Blog('Sanrei', 'Adilhyz', 'https://adilhyz.github.io');
 
 ## Login Kuy
 
-- [Umami](https://us.umami.is/share/---/adilhyz.github.io)
+- [Umami](https://cloud.umami.is/share/4ZQbRC49QOEOUZ89)
 
 {{% /fixit-encryptor %}}
 

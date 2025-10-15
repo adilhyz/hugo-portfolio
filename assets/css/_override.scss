@@ -4,6 +4,14 @@ $custom-admonition-map: (
     color: #6eba97,
     bg-color: rgba(110, 186, 151, 0.1),
   ),
+  umami: (
+    color: #eeeeee, // warna khas tema Umami
+    bg-color: rgba(238, 238, 238, 0.05), // sedikit transparan untuk kontras ringan
+  ),
+  ga: (
+    color: #f9ab00, // oranye khas Google Analytics
+    bg-color: rgba(249, 171, 0, 0.1), // lembut biar tetap readable
+  ),
 );
 
 $admonition-color-map: map-merge($admonition-color-map, $custom-admonition-map);

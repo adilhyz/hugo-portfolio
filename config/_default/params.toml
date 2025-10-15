@@ -174,7 +174,7 @@ disableThemeInject = false
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = "Updated on"
-    value = "2025-09-25T08:01:01+07:00"
+    value = "2025-10-15T08:01:01+07:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
     powered = 1
@@ -502,6 +502,7 @@ disableThemeInject = false
       # someCSS = "https://cdn.example.com/some.css"
     [page.library.js]
       fullscreen = "js/_custom/fullscreen.js"
+      swg = "https://news.google.com/swg/js/v1/swg-basic.js"
       # someJavascript = "_some.js"
       # Or
       # someJavascript = "https://code.jquery.com/jquery-3.7.1.min.js"
@@ -765,6 +766,7 @@ disableThemeInject = false
 [advertisement]
   adsense = "ca-pub-6621721702777739"
   gtag = "GTM-MV262V8F"
+  swag = "CAowt-HBDA"
 
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/partials/ directory.
@@ -776,6 +778,7 @@ disableThemeInject = false
     "inject/shortcode-rewards.html",
     "custom/page-style.html",
     "custom/gtag.html",
+    "custom/swag.html",
   ]
   menuDesktop = [
     "inject/translate-menu-desktop.html",
@@ -885,3 +888,5 @@ disableThemeInject = false
 
 [admonition]
     kaminari = "fa-solid fa-bolt"
+    umami = "fa-solid fa-chart-simple"
+    ga = "fa-brands fa-google"

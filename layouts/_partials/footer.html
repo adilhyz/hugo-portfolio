@@ -70,6 +70,15 @@
         <div class="footer-line statistics{{ with $footerConfig.order.statistics }} order-{{ . }}{{ end }}">
           {{- if $siteTime.enable | and $siteTime.value -}}
             {{- with $siteTime -}}
+              {{- $footerPublish := site.Menus.footerpublisher -}}
+              <span id="footag">
+                  {{- range $i, $item := $footerPublish -}}
+                  {{- if gt $i 0 -}} | {{- end -}}
+                  <a href="{{ $item.URL | relLangURL }}">
+                      {{ $item.Name }}
+                  </a>
+                  {{- end -}}
+              </span>
               <span class="site-time" title='{{ T "footer.siteRunning" }}'>
                 {{- $siteTimeIcon := printf (cond .Animate "%v fa-fw animate-icon" "%v fa-fw") .Icon -}}
                 {{- dict "Class" $siteTimeIcon | partial "plugin/icon.html" -}}
@@ -80,7 +89,6 @@
           {{- end -}}
         </div>
       {{- end -}}
-
       {{- /* 不蒜子 */ -}}
       {{- $busuanzi := .Site.Params.busuanzi -}}
       {{- if eq $busuanzi.enable true -}}

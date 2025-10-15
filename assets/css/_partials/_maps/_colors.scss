@@ -6,6 +6,9 @@ $info: #0dcaf0 !default;
 $warning: #ffba00 !default;
 $danger: #ff4949 !default;
 $kaminari: #6eba97 !default;
+$umami: #1c1e26 !default; 
+$ga: #f9ab00 !default; // Warna oranye khas Google Analytics
+
 
 // Theme colors map
 $theme-colors: (
@@ -16,4 +19,7 @@ $theme-colors: (
   'warning': $warning,
   'danger': $danger,
   'kaminari': $kaminari,
+  'umami': $umami,
+  'ga': $ga,
+
 ) !default;

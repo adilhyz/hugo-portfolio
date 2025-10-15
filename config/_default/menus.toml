@@ -139,3 +139,13 @@
   name = "Friends"
   url = "/friends/"
   weight = 10
+
+[[footerpublisher]]
+  name = "Privacy"
+  url = "/privacy/"
+  weight = 11
+
+[[footerpublisher]]
+  name = "Disclaimer"
+  url = "/disclaimer/"
+  weight = 12
